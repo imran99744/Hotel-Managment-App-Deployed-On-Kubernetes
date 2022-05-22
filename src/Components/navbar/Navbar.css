@@ -17,6 +17,8 @@
 
 .logo {
     font-weight: 500;
+    color: white;
+    list-style: none;
 }
 
 .navButtons {
