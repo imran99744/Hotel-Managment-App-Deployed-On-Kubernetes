@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hotel-ui-app
+  labels:
+    app: hotel-ui
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hotel-ui
+  template:
+    metadata:
+      labels:
+        app: hotel-ui
+    spec:
+      containers:
+      - name: hotel-ui
+        image: imran19977/hotel-ui
+        ports:
+        - containerPort: 3000
+
